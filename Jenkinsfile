@@ -59,8 +59,8 @@
              stage("PayTonkawa Archive"){
                 steps {
                     dir ('projects/erphrense'){
-                        bat 'rename target\\erphrense-0.0.1-SNAPSHOT.jar erphrense-%BUILD_NUMBER%.jar'
-                        archiveArtifacts artifacts: 'target\\erphrense-*.jar', followSymlinks: false
+                        bat 'rename target\\erphrense-0.0.1-SNAPSHOT.jar paytonkawa-%BUILD_NUMBER%.jar'
+                        archiveArtifacts artifacts: 'target\\paytonkawa-*.jar', followSymlinks: false
                           
                     }
                 }
