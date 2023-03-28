@@ -26,7 +26,7 @@
             }
           
           
-              stage("PayTonkawa Compile"){
+              stage("PayTonkawa dependncies"){
                 steps {
                     dir ('projects/erphrense'){
                          bat './mvnw compile'
